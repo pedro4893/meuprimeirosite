@@ -3,9 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>meu primeiro site</title>
+    <title>Blue Lock | Rival System</title>
+    <style>
+        /* Reseta padrões e define a vibe do anime */
+        body {
+            background-color: #0a0a0c;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(180deg, #001f3f 0%, #0a0a0c 100%);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 3px solid #00d4ff;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #00d4ff;
+            text-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Grid de Rivais */
+        .rival-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #16161a;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #00d4ff;
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+        }
+
+        .card h3 {
+            color: #00d4ff;
+            margin-top: 0;
+            border-left: 4px solid #00d4ff;
+            padding-left: 10px;
+        }
+
+        .rank {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-weight: bold;
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Tabela de Atributos */
+        .stats-table {
+            width: 100%;
+            margin-top: 50px;
+            border-collapse: collapse;
+            background: #111;
+        }
+
+        .stats-table th, .stats-table td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #222;
+        }
+
+        .stats-table th {
+            background-color: #00d4ff;
+            color: #000;
+            text-transform: uppercase;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-    hello wold!
+
+    <header>
+        <h1>Blue Lock: Rivals</h1>
+        <p>Devore ou seja devorado. Quem é o maior egoísta?</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="rival-grid">
+            <div class="card">
+                <span class="rank">#1</span>
+                <h3>Itoshi Rin</h3>
+                <p>O mestre do "Puppeteer Soccer". Ele controla o campo através da lógica e precisão absoluta.</p>
+                <strong>Arma Principal:</strong> Chute de Precisão.
+            </div>
+
+            <div class="card">
+                <span class="rank">#13</span>
+                <h3>Shoei Barou</h3>
+                <p>O Rei do campo. Sua força física e chutes de longa distância forçam Isagi a evoluir constantemente.</p>
+                <strong>Arma Principal:</strong> Chute de Curva Poderoso.
+            </div>
+
+            <div class="card">
+                <span class="rank">#2</span>
+                <h3>Ryusei Shidou</h3>
+                <p>Um demônio na área de penalti. Ele marca gols em posições impossíveis através do instinto puro.</p>
+                <strong>Arma Principal:</strong> Consciência Espacial Extrema.
+            </div>
+        </section>
+
+        <h2 style="margin-top: 60px; color: #00d4ff;">Comparação de Ego</h2>
+        <table class="stats-table">
+            <thead>
+                <tr>
+                    <th>Jogador</th>
+                    <th>Chute</th>
+                    <th>Velocidade</th>
+                    <th>Drible</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Isagi Yoichi</td>
+                    <td>82</td>
+                    <td>77</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>Itoshi Rin</td>
+                    <td>95</td>
+                    <td>85</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Barou</td>
+                    <td>92</td>
+                    <td>80</td>
+                    <td>88</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Projeto Blue Lock - "O futebol é um esporte onde você marca gols."</p>
+    </footer>
+
 </body>
 </html>
